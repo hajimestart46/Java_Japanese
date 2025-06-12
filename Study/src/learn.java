@@ -1,6 +1,7 @@
 
 public class learn {
 	public static void main(String[] args) {
+		
 		//format　フォーマット　形式
 				//クラスやインタフェース：大文字は1文字目
 				//変数やメソッドやパッケージ：小文字は1文字目
@@ -20,7 +21,6 @@ public class learn {
 			    
 			    float a = 11f;
 			    System.out.println(a);
-			    
 		
 	}
 }
