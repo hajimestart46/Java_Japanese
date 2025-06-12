@@ -21,6 +21,9 @@ public class learn {
 			    
 			    float a = 11f;
 			    System.out.println(a);
+			    
+			    //配列
+			    
 		
 	}
 }
