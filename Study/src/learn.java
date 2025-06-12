@@ -43,7 +43,15 @@ public class learn {
 			    System.out.println(multiArray.length);
 			    System.out.println(multiArray[0].length);
 			    
+			    int plus = 1;
+			    int plus1 = plus++;
+			    //int plus2 = ++plus;
 			    
+			    System.out.println("plus++ " + plus1);
+			    System.out.println(plus == plus1);
+			    //System.out.println("++plus " + plus2);
+			    
+			    //
 		
 	}
 }
