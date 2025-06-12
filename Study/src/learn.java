@@ -1,4 +1,3 @@
-
 public class learn {
 	public static void main(String[] args) {
 		
@@ -22,7 +21,28 @@ public class learn {
 			    float a = 11f;
 			    System.out.println(a);
 			    
-			    //配列
+			    /**  配列
+			    	データ型[] 配列名 = new データ型[要素数];
+			    	int[] score1 = new int[3];
+			    	int[] score2 = {1,2,3};//[]内の数字は添字
+			    **/
+			    
+			    //多次元配列
+			    
+			    /* int[][] multiArray = new int[2][3];
+			    	multiArray[0][0] = 10;
+				    multiArray[0][1] = 10;
+				    multiArray[0][2] = 10;
+				    multiArray[1][0] = 10;
+				    multiArray[1][1] = 10;
+				    multiArray[1][2] = 10;
+				*/
+			    
+			    int[][] multiArray = {{10, 20, 30},{10, 20, 30}};
+
+			    System.out.println(multiArray.length);
+			    System.out.println(multiArray[0].length);
+			    
 			    
 		
 	}
