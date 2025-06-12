@@ -52,6 +52,7 @@ public class learn {
 			    //System.out.println("++plus " + plus2);
 			    
 			    //
+			    //初音
 		
 	}
 }
