@@ -42,8 +42,8 @@ public class BasicObject {
 		//呼び出すメソッドは名前と引数の組合せで決めている
 		stu1.setScore(60, 60);
 		stu1.display();
-		//stu1.phyScore = 10; これは代入可能
-		//stu1.engScore = 10; これは代入不可能
+		//stu1.phyScore = 10; 直接代入可能
+		//stu1.engScore = 10; メンバー変数は隠ぺいしてしまったため、直接代入不可能　
 		//オブジェクトを生成しなくても利用できる static型
 		Student.info();
 	}
