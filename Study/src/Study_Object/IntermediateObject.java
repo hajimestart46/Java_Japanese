@@ -27,7 +27,7 @@ public class IntermediateObject {
 
 }
 
-class Person {
+class Person { //final class Personに設定すると継承できない
 	private String name;
 	
 	//コンストラクタ
@@ -48,6 +48,7 @@ class Person {
 	public void display() { 
 		System.out.println("(super)名前 " + name);
 	}
+	final void Test() {} 
 }
 
 class Students extends Person {
@@ -80,4 +81,8 @@ class Students extends Person {
 
 class Teachers extends Person {
 	
+	final String name = "山本";
+	//name = "佐藤"; 代入不可能
+	
+	//void Test( ) {} オーバーライド不可能
 }
