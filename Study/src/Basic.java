@@ -1,4 +1,4 @@
-public class learn {
+public class Basic {
 	public static void main(String[] args) {
 		
 		//format　フォーマット　形式
@@ -52,7 +52,7 @@ public class learn {
 			    //System.out.println("++plus " + plus2);
 			    
 			    //
-			    //初音
+			    
 		
 	}
 }
