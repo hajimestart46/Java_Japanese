@@ -9,13 +9,19 @@ public class IntermediateObject {
 		 	継承関係にある親のクラスをスーパークラス、子のクラスをサブクラス
 		 	＊継承できるクラスは1つだけ
 		 	＊コンストラクタは継承しない
-		 */
-		Students stu1 = new Students();
+		*/
+		
+		/*
+		 	＊thisのメリット： 引数の名前を考えなくても良い
+		 	＊superのメリット：再び書く必要はない
+		 	＊this(),super()コンストラクタ内の先頭に記述
+	　　*/
+		Students stu1 = new Students("山田", 2);
 		//スーパークラスのメソッド
-		stu1.setName("山田");
+		//stu1.setName("山田");
 		stu1.display();
 		//サブクラスのメソッド
-		stu1.setStuNo(1);
+		//stu1.setStuNo(1);
 		stu1.displayStuNo();
 	}
 
@@ -24,20 +30,35 @@ public class IntermediateObject {
 class Person {
 	private String name;
 	
-	public void setName(String n) {
-		name = n;
+	//コンストラクタ
+	Person() {
+		this("未設定");
+	}
+	
+	public Person(String name) {
+		this.name = name;
+	}
+
+	public void setName(String name) {
+		this.name = name;//this.～は自オブジェクトの
 	}
 	public String getName() {
 		return name;
 	}
 	public void display() { 
-		System.out.println("名前 " + name);
+		System.out.println("(super)名前 " + name);
 	}
 }
 
 class Students extends Person {
 	private int stuNo;
 	
+	//コンストラクタ
+	Students(String name, int stuNo) {
+		//このsuper()なければ自動的にsuper();が挿入される
+		super(name);
+		this.stuNo = stuNo;
+	}
 	public void setStuNo(int s) {
 		stuNo = s;
 	}
@@ -48,11 +69,12 @@ class Students extends Person {
 	//オーバーライド
 	//サブクラスでスーパークラスのメソッドを再定義することをオーバーライド
 	public void display() {
+		super.display();//super.～はスーパークラスの
 		System.out.println("オーバーライドした");
 		/*	メンバー変数nameはprivate指定されて、Personクラスの中でしか
 		  	アクセスすることができないメンバー変数変数
 		*/
-		System.out.println("名前 " + getName());//getNameメソッドを経由して取得すること
+		System.out.println("(sub)名前 " + getName());//getNameメソッドを経由して取得すること
 	}
 }
 
