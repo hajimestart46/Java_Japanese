@@ -51,8 +51,15 @@ public class Basic {
 			    System.out.println(plus == plus1);
 			    //System.out.println("++plus " + plus2);
 			    
-			    //
+			    /*	数値同士の演算や代入をする時に
+			    	自動で行われる：表現できる値の幅が小->大
+			    	キャストで明示する：表現できる値の幅が大->小
+			    */
+			    int sho = 1;
+			    double dai = 10;
 			    
+			    dai = sho;
+			    sho = (int)dai;//キャストが必要
 		
 	}
 }
