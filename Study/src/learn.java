@@ -36,7 +36,7 @@ public class learn {
 				    multiArray[1][0] = 10;
 				    multiArray[1][1] = 10;
 				    multiArray[1][2] = 10;
-				*/
+			     */
 			    
 			    int[][] multiArray = {{10, 20, 30},{10, 20, 30}};
 
