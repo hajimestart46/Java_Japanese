@@ -15,7 +15,7 @@ public class IntermediateObject {
 		 	＊thisのメリット： 引数の名前を考えなくても良い
 		 	＊superのメリット：再び書く必要はない
 		 	＊this(),super()コンストラクタ内の先頭に記述
-	　　*/
+	　　    */
 		Students stu1 = new Students("山田", 2);
 		//スーパークラスのメソッド
 		//stu1.setName("山田");
