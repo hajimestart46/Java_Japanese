@@ -1,5 +1,3 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hajimestart46)](https://github.com/hajimestart46/github-readme-stats)
-
 # Welcome to My Repository!
 
 ---
