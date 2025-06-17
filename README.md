@@ -1,3 +1,5 @@
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hajimestart46)](https://github.com/hajimestart46/github-readme-stats)
+
 Hello everyone, Welcome to my repository.
 These codes should be good for newbies to understand Java if they are interested in learning.
 My English is very poor and I'm trying to learin it now.
@@ -13,3 +15,4 @@ Let's work together!
 如果有兴趣学习的话，这些代码应该很适合新手了解java
 我的英语非常差，正在努力学习中！
 一起加油吧！
+
