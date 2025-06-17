@@ -1,18 +1,22 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=hajimestart46)](https://github.com/hajimestart46/github-readme-stats)
 
-Hello everyone, Welcome to my repository.
-These codes should be good for newbies to understand Java if they are interested in learning.
-My English is very poor and I'm trying to learin it now.
-Let's work together!
+# Welcome to My Repository!
 
-みなさん、こんにちは
-私のレスポンスへようこそ
-こちらのコードはJavaの新米の学習者に対して役に立つことができると思います。
-私の英語はとても苦手で今勉強中です。（もちろん、日本語もうまくできないですが💦
+---
+Hello everyone, welcome to my repository!  
+These Java codes are meant to help beginners who are interested in learning the language.  
+I'm currently studying English, so please forgive any mistakes.  
+Let’s grow together and keep learning!
+
+---
+みなさん、こんにちは！私のリポジトリへようこそ。  
+ここにあるコードは、Java に興味を持っている初心者の方に役立つ内容だと思います。  
+英語の勉強を頑張っているところです（実は日本語もあまり上手じゃないですが💦）  
 一緒に頑張りましょう！
 
-大家好，欢迎访问我的仓库
-如果有兴趣学习的话，这些代码应该很适合新手了解java
-我的英语非常差，正在努力学习中！
-一起加油吧！
+---
+大家好，欢迎访问我的仓库！  
+这些代码适合对 Java 感兴趣的新手入门学习使用。  
+我的英语不是很好，现在正在努力学习中！  
+让我们一起加油吧！
 
