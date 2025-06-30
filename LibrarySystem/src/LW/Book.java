@@ -7,7 +7,9 @@ public class Book {
 	private String writer;
 	// 借りられているかどうかの状態
 	private boolean isBorrowed;
-
+	// 誰に借りられた・返却した確定
+	private User userBorrowed;
+	
 	// コンストラクタ
 	public Book(String bookName, String writer) {
 		this.bookName = bookName;
@@ -22,22 +24,31 @@ public class Book {
 	}
 
 	// 本を借りる処理（借りられていなければ貸出する）
-	public void borrow() {
-		if (!isBorrowed) {
-			isBorrowed = true;
-			System.out.println("「" + bookName + "」を借りました");
-		} else {
-			System.out.println("「" + bookName + "」はすでに貸出中です");
+	public void borrow(User user) {
+		try {
+			if (!isBorrowed) {
+				isBorrowed = true;
+				//現在借りられたユーザーの値を代入する
+				userBorrowed = user;
+				System.out.println(user.userInfo() + " さんが「" + bookName + "」を借りました。");
+			} else {
+				System.out.println("「" + bookName + "」はすでに" + userBorrowed.userInfo() + "さんは貸出中です。");
+			}
+		} catch(Exception e) {
+			System.out.println("ユーザーがないです。");
 		}
 	}
 
 	// 本を返却する処理
-	public void bookReturn() {
-		if (isBorrowed) {
+	public void bookReturn(User user) {
+		// 借りられたユーザーは返却するとき
+		if (isBorrowed && userBorrowed.equals(user)) {
 			isBorrowed = false;
-			System.out.println("「" + bookName + "」を返却しました");
+			// ユーザーはNULL
+			userBorrowed = null;
+			System.out.println(user.userInfo() + " さんが「" + bookName + "」を返却しました。");
 		} else {
-			System.out.println("「" + bookName + "」はまだ借りられていません");
+			System.out.println("「" + bookName + "」はまだ借りられていません。");
 		}
 	}
 
